@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**Repository:** https://github.com/suedeapple/population-checker-umbraco
+
 ## Commands
 
 ```bash

@@ -1,6 +1,8 @@
-# World Population — Umbraco
+# Population Checker — Umbraco
 
-Umbraco 17 CMS backend for the World Population project, running on .NET 10. Provides content management via the Umbraco backoffice and a headless Delivery API consumed by a Next.js frontend.
+Umbraco 17 CMS backend for the Population Checker project, running on .NET 10. Provides content management via the Umbraco backoffice and a headless Delivery API consumed by a Next.js frontend.
+
+**Repository:** https://github.com/suedeapple/population-checker-umbraco
 
 ## Prerequisites
 

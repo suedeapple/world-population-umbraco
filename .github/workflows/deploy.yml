@@ -36,7 +36,7 @@ jobs:
           curl.exe --silent --show-error --ftp-ssl --ftp-create-dirs `
             -T "app_offline.htm" `
             --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" `
-            "ftp://${{ secrets.FTP_SERVER }}/world-population.suedeapple.co.uk/public_html/app_offline.htm"
+            "ftp://${{ secrets.FTP_SERVER }}/population-checker.suedeapple.co.uk/public_html/app_offline.htm"
         shell: powershell
 
       - name: Deploy via FTP
@@ -46,7 +46,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./publish/
-          server-dir: /world-population.suedeapple.co.uk/public_html/
+          server-dir: /population-checker.suedeapple.co.uk/public_html/
           dangerous-clean-slate: false
           exclude: |
             **/.git*
@@ -57,7 +57,7 @@ jobs:
         if: always()
         run: |
           curl.exe --silent --show-error --ftp-ssl `
-            -Q "DELE /world-population.suedeapple.co.uk/public_html/app_offline.htm" `
+            -Q "DELE /population-checker.suedeapple.co.uk/public_html/app_offline.htm" `
             --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" `
             "ftp://${{ secrets.FTP_SERVER }}/"
         shell: powershell
