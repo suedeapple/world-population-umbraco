@@ -31,7 +31,7 @@ jobs:
       - name: Put site offline
         run: |
           Set-Content -Path app_offline.htm -Value @'
-          <html><body><h1><blink>Back shortly</blink></h1></body></html>
+          <html><body><h1><marquee>Back shortly</marquee></h1></body></html>
           '@
           curl.exe --silent --show-error --ftp-ssl --ftp-create-dirs `
             -T "app_offline.htm" `
