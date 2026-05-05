@@ -2,7 +2,19 @@
 
 Umbraco 17 CMS backend for the Population Checker project, running on .NET 10. Provides content management via the Umbraco backoffice and a headless Delivery API consumed by a Next.js frontend.
 
+**Live site:** https://population-checker.vercel.app/
 **Repository:** https://github.com/suedeapple/population-checker-umbraco
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| CMS | [Umbraco 17](https://umbraco.com/) |
+| Runtime | .NET 10 |
+| Database | SQL Server |
+| Delivery API | Umbraco Delivery API (headless) |
+| Frontend | Next.js (hosted on Vercel) |
+| Deployment | Vercel (frontend) |
 
 ## Prerequisites
 
