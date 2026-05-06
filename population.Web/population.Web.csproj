@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Umbraco.AI" />
+    <PackageReference Include="Umbraco.AI.OpenAI" />
+    <PackageReference Include="Umbraco.AI.Prompt" />
     <PackageReference Include="Umbraco.Cms" />
   </ItemGroup>
 
